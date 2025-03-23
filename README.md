@@ -10,7 +10,7 @@ This tool can be used within either the `_ansible` or `_docker` suffixed reposit
 
 ## Contents
 
-| File(s) / Directory or Director                            ies | Description                                                                    |
+| File(s) / Directory or Directories | Description                                                                    |
 | -------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | `docker-compose.yml`<br>`docker-entrypoint.sh`<br>`Dockerfile` | Configuration for this tool, which is implemented as a Docker Compose service. |
 
