@@ -33,3 +33,5 @@ docker-compose run --rm -e SUBDOMAIN=$SUBDOMAIN wp-make-backup
 ```
 
 You must provide the value for `$SUBDOMAIN` on the command line; for example, *www*, *staging*, *test*, etc. Remember that first there must be restored files present on the *hub* host that have been created using the Varilink [Tools - WordPress Restore](git@github.com:varilink/tools_wordpress-restore.git) tool.
+
+When the tool is run it will check if the `backup/` directory already contains `database.sql.gz` and `html.tar.gz` files. If it does then those will be moved to a subdirectory of the `backup/` directory, which this tool will create giving it a name that is based on a hash of the current timestamp.
